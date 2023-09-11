@@ -20,8 +20,8 @@
   <div class="main">
     <div class="container">
       <div class="header">
+        <img src="./assets/logoAZUL.png" class="logo" />
         <div class="header-content" id="header">
-          <img src="./assets/logoAZUL.png" class="logo" />
           <button onclick="window.location.href='login.html'" class="login-button" id="botaoLogin">LOGIN</button>
         </div>
       </div>
@@ -266,7 +266,7 @@
 
     if (user != null) {
       botaoLogin.style.display = "none";
-      header.innerHTML += `<span class='user'>Olá, ${user}</span>`;
+      header.innerHTML += `<span class='user'>Olá, <span id="text-user">${user}</span></span>`;
       header.innerHTML += `<button onclick="deslogar()" class="login-button" id="botaoLogOut">LOG-OUT</button>`;
     }
   

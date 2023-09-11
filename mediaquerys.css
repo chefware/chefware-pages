@@ -16,21 +16,24 @@
   }
 
   .logo {
-    position: relative;
-    right: 15%;
     margin-top: 2%;
     width: 60px;
   }
 
   .login-button {
-    position: relative;
-    width: 20%;
+    width: 30%;
     height: 40%;
     border-radius: 20px;
-    font-size: 10px;
+    font-size: 15%;
     font-weight: 700;
     left: 5%;
   }
+
+  .user{
+    font-size: 1.5vh;
+    margin-left: 0%;
+    white-space: nowrap;
+}
 
   .content1 {
     width: 100%;
@@ -233,6 +236,8 @@
     font-size: 10px;
     width: 90%;
   }
+
+
 }
 
 /* PARA TELAS DESKTOP PEQUENO */
