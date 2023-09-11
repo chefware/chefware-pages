@@ -42,6 +42,7 @@
               >
               <button class=" bt_cadastro" id="loginbotao" onclick="logar()">Entrar</button>
           </div>
+          <div id="feedback_user"></div>
         </div>
       </div>
     </div>
@@ -49,6 +50,7 @@
 </body>
 
 </html>
+
 <script>
 
 window.addEventListener("keyup", capturarTecla)
@@ -57,26 +59,24 @@ window.addEventListener("keyup", capturarTecla)
         logar();
       }
 
-      
   function logar() {
-
       var user = document.getElementById("inp_user").value;
       var password = document.getElementById("inp_password").value;
+      var feedback_div = document.getElementById("feedback_user");
       var correctUser = "fernanda";
       var correctPassword = "caramico";
       var correctUser2 = "gustavo";
       var correctPassword2 = "ribeiro";
 
       if (correctUser == "" || correctPassword == "") {
-        alert("Preencha todos os campos!");
+        feedback_div.innerHTML = `Campos não podem ser nulos`
         return false;
       } else {
         if (correctUser == user && correctPassword == password) {
-          alert("Login realizado com sucesso!");
           window.location.href = "./index.html";
           sessionStorage.setItem("user", user);
         } else {
-          alert("Usuário ou senha incorretos!");
+          feedback_div.innerHTML = `Usuário ou senha incorretos.`
           return false;
         }
       }
@@ -84,4 +84,5 @@ window.addEventListener("keyup", capturarTecla)
 
     }
   }
+
 </script>
