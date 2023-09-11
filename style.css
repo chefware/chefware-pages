@@ -17,21 +17,21 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
   }
-
+  
   /* Track */
   ::-webkit-scrollbar-track {
     border-radius: 5px;
   }
-
+   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #2E4CAD;
+    background: #2E4CAD; 
     border-radius: 10px;
   }
-
+  
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #040454;
+    background: #040454; 
   }
 
 .main {
@@ -422,7 +422,7 @@ body {
     font-size: 25px;
     font-weight: 300;
     margin-top: 5%;
-}
+} 
 
 .title-important {
     font-weight: 800;
@@ -507,7 +507,7 @@ body {
     align-items: baseline;
     justify-content: space-between;
     margin: 5% 0 0 6%;
-    font-size: 15px;
+    font-size: 15px; 
 }
 
 .means-of-contact .means {
@@ -526,7 +526,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 8% 0 8% 0;
-    font-size: 15px;
+    font-size: 1.6vh; 
 }
 
 .means-of-contact .means-company img {
