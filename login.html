@@ -75,6 +75,20 @@ function logar() {
         }
       }
     }
+  
+  if (correctUser2 == "" || correctPassword2 == "") {
+        feedback_div.innerHTML = `Campos não podem ser nulos`
+        return false;
+      } else {
+        if (correctUser2 == user && correctPassword2 == password) {
+          window.location.href = "./index.html";
+          sessionStorage.setItem("user", user);
+        } else {
+          feedback_div.innerHTML = `Usuário ou senha incorretos.`
+          return false;
+        }
+      }
+    }
 
 window.addEventListener("keyup", capturarTecla)
     function capturarTecla(event) {
