@@ -74,9 +74,8 @@ function logar() {
           return false;
         }
       }
-    }
-  
-  if (correctUser2 == "" || correctPassword2 == "") {
+      
+      if(correctUser2 == "" || correctPassword2 == ""){
         feedback_div.innerHTML = `Campos não podem ser nulos`
         return false;
       } else {
@@ -88,7 +87,13 @@ function logar() {
           return false;
         }
       }
+
+
     }
+
+    
+  
+
 
 window.addEventListener("keyup", capturarTecla)
     function capturarTecla(event) {
