@@ -69,22 +69,24 @@ function logar() {
         if (correctUser == user && correctPassword == password) {
           window.location.href = "./index.html";
           sessionStorage.setItem("user", user);
+          return;
         } else {
           feedback_div.innerHTML = `Usuário ou senha incorretos.`
-          return false;
+          return;
         }
       }
       
       if(correctUser2 == "" || correctPassword2 == ""){
         feedback_div.innerHTML = `Campos não podem ser nulos`
-        return false;
+        return;
       } else {
         if (correctUser2 == user && correctPassword2 == password) {
           window.location.href = "./index.html";
           sessionStorage.setItem("user", user);
+          return;
         } else {
           feedback_div.innerHTML = `Usuário ou senha incorretos.`
-          return false;
+          return;
         }
       }
 
