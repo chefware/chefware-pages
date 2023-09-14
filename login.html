@@ -66,20 +66,15 @@ function logar() {
         feedback_div.innerHTML = `Campos não podem ser nulos`
         return false;
       } else {
-        if ((correctUser == user && correctPassword == password) || (correctUser2 == user && correctPassword2 == password)) {
+        if (correctUser == user && correctPassword == password) {
           window.location.href = "./index.html";
           sessionStorage.setItem("user", user);
-          return;
         } else {
           feedback_div.innerHTML = `Usuário ou senha incorretos.`
-          return;
+          return false;
         }
       }
     }
-
-    
-  
-
 
 window.addEventListener("keyup", capturarTecla)
     function capturarTecla(event) {
